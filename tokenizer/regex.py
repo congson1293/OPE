@@ -12,7 +12,7 @@ class regex:
         self.detect_url = re.compile(u'(https|http|ftp|ssh)://[^\s\[\]\(\)\{\}]+', re.I)
         self.detect_num = re.compile(u'(\d+,\d+\w*)|(\d+\.\d+\w*)|(\w*\d+\w*)')
         self.detect_email = re.compile(u'[^@|\s]+@[^@|\s]+')
-        self.detect_datetime = re.compile(u'\d+[\-/]\d+[\-/]*\d*')
+        self.detect_datetime = re.compile(u'\d+[\-/\.]\d+[\-/\.]*\d*')
         self.change_to_space = re.compile(u'\t')
         self.normalize_special_mark = re.compile(u'(?P<special_mark>[\.,\(\)\[\]\{\};!?:“”\"\'/\<\>])')
         self.detect_special_mark = re.compile(u'[\(\)\[\]\{\}\<\>“”\"\']')
